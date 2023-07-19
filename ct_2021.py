@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Set the title of the app
-st.title("CGPA Calculator")
+st.title("CT Revision 2021")
 
 # Define the subjects and their corresponding credit hours for each semester
 semesters_regular = {
