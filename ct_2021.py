@@ -4,30 +4,8 @@ import streamlit as st
 st.title("CT Revision 2021")
 
 # Define the subjects and their corresponding credit hours for each semester
-semesters_regular = {
-    "Semester 1": {
-        "1. Communication Skills in English": 4,
-        "2. Mathematics I": 5,
-        "3. Applied Physics I": 3,
-        "4. Applied Chemistry": 3,
-        "5. Engineering Graphics": 1.5,
-        "6. Applied Chemistry Lab": 1,
-        "7. Introduction to IT systems Lab": 2,
-        "8. Sports and Yoga": 1,
-    },
-    "Semester 2": {
-        "1. Mathematics II": 4,
-        "2. Applied Physics II": 3,
-        "3. Environmental Science":0,
-        "4. Fundamentals of Electrical & Electronics Engineering": 3,
-        "5. Problem Solving and Programming": 3,
-        "6. Communication Skills in English Lab": 1.5,
-        "7. Applied Physics Lab": 1,
-        "8. Fundamentals of Eletrical & Electronics Engineering Lab":0,
-        "9. Problem Solving and Programming Lab":0,
-        "10. Engineering Workshop Practice": 1.5,
-        "11. Internship I": 2,
-    },
+
+last_4_sem = {
     "Semester 3": {
         "1. Computer Organisation": 4,
         "2. Programming in C": 3,
@@ -75,52 +53,41 @@ semesters_regular = {
     },
 }
 
+semesters_regular = {
+    "Semester 1": {
+        "1. Communication Skills in English": 4,
+        "2. Mathematics I": 5,
+        "3. Applied Physics I": 3,
+        "4. Applied Chemistry": 3,
+        "5. Engineering Graphics": 1.5,
+        "6. Applied Chemistry Lab": 1,
+        "7. Introduction to IT systems Lab": 2,
+        "8. Sports and Yoga": 1,
+    },
+    "Semester 2": {
+        "1. Mathematics II": 4,
+        "2. Applied Physics II": 3,
+        "3. Environmental Science":0,
+        "4. Fundamentals of Electrical & Electronics Engineering": 3,
+        "5. Problem Solving and Programming": 3,
+        "6. Communication Skills in English Lab": 1.5,
+        "7. Applied Physics Lab": 1,
+        "8. Fundamentals of Eletrical & Electronics Engineering Lab":0,
+        "9. Problem Solving and Programming Lab":0,
+        "10. Engineering Workshop Practice": 1.5,
+        "11. Internship I": 2,
+    },
+    "Semester 3": last_4_sem["Semester 3"],
+    "Semester 4": last_4_sem["Semester 4"],
+    "Semester 5": last_4_sem["Semester 5"],
+    "Semester 6": last_4_sem["Semester 6"],
+}
+
 semesters_lateral = {
-    "Semester 3": {
-        "1. Computer Organisation": 4,
-        "2. Programming in C": 3,
-        "3. Database Management Systems": 3,
-        "4. Digital Computer Fundamentals": 3,
-        "5. Programming in C Lab": 1.5,
-        "6. Database Management System lab":1.5,
-        "7. Digital Computer Fundamentals Lab":1.5,
-        "8. Web Technology lab":2.5,
-        "9. Computer System Hardware Lab":0,
-    },
-    "Semester 4": {
-        "1. Object Oriented Programming": 4,
-        "2. Computer Communication and Networks": 3,
-        "3. Data Structures": 4,
-        "4. Community Skills in Indian knowledge system": 0,
-        "5. Object Oriented Programming Lab": 1.5,
-        "6. Web Programming Lab":0,
-        "7. Data Structures Lab":1.5,
-        "8. Application Development Lab":0,
-        "8. Minor Project":2,
-        "9. Internship II":3,
-    },
-    "Semester 5": {
-        "1. Project Management and Software Engineering": 0,
-        "2. Embedded System and Real time Operating System": 4,
-        "3. Program elective course (Virtualisation Technology and Cloud Computing / Ethical Hacking / Fundamentals of Artificial Intelligence and Machine Learning)": 4,
-        "4. Community Skills in Indian knowledge system": 4,
-        "5. Embedded Systems and Real Time Operating System Lab": 1.5,
-        "6. System Administration Lab":1.5,
-        "7. Program elective course lab (Virtualisation Technology and cloud computing Lab / Ethical Hacking Lab / Fundamentals of Artificial Intelligence and Machine Learning Lab)":1.5,
-        "8. Seminar":1,
-        "9. Major Project":0,
-    },
-    "Semester 6": {
-        "1. Entrepreneurship and Startup": 4,
-        "2. Embedded System and Real time Operating System": 4,
-        "3. Program elective course (Software Testing / Internet of Things / Server Administration)": 4,
-        "4. Open elective course (Introduction to IoT / Fundamentals of Web Technology / Multimedia / Cloud Computing)": 0,
-        "5. Indian Constitution": 2.5,
-        "6. Computer Network Engineering Lab": 1.5,
-        "7. Smart Device Programming Lab":1.5,
-        "8. Program elective course lab (Software Testing Lab / Internet of Things Lab / Server Administration Lab)":1.5,
-        "9. Major Project":4,
-    },
+    "Semester 3": last_4_sem["Semester 3"],
+    "Semester 4": last_4_sem["Semester 4"],
+    "Semester 5": last_4_sem["Semester 5"],
+    "Semester 6": last_4_sem["Semester 6"],
 }
 
 # Get the student category from the user

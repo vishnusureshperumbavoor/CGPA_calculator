@@ -4,27 +4,8 @@ import streamlit as st
 st.title("CT Revision 2015")
 
 # Define the subjects and their corresponding credit hours for each semester
-semesters_regular = {
-    "Semester 1": {
-        "1. English for Communication I": 3,
-        "2. Engineering Mathematics I": 6,
-        "3. Engineering Physics I": 3,
-        "4. Engineering Chemistry I": 3,
-        "5. Health & Physical Education": 2,
-        "6. Computing Fundamentals": 4,
-    },
-    "Semester 2": {
-        "1. English for Communication II": 3,
-        "2. Engineering Mathematics II": 6,
-        "3. Engineering Physics II":3,
-        "4. Engineering Chemistry II": 3,
-        "5. Programming in C": 4,
-        "6. Engineering Graphics": 5,
-        "7. Workshop Practice": 3,
-        "8. Engineering Science Lab II":3,
-        "9. Programming in C Lab":2,
-        "10. Life Skill": 2,
-    },
+
+last_4_sem = {
     "Semester 3": {
         "1. Digital Computer Principles": 4,
         "2. Object Oriented Programming through C++": 5,
@@ -66,46 +47,38 @@ semesters_regular = {
     },
 }
 
+semesters_regular = {
+    "Semester 1": {
+        "1. English for Communication I": 3,
+        "2. Engineering Mathematics I": 6,
+        "3. Engineering Physics I": 3,
+        "4. Engineering Chemistry I": 3,
+        "5. Health & Physical Education": 2,
+        "6. Computing Fundamentals": 4,
+    },
+    "Semester 2": {
+        "1. English for Communication II": 3,
+        "2. Engineering Mathematics II": 6,
+        "3. Engineering Physics II":3,
+        "4. Engineering Chemistry II": 3,
+        "5. Programming in C": 4,
+        "6. Engineering Graphics": 5,
+        "7. Workshop Practice": 3,
+        "8. Engineering Science Lab II":3,
+        "9. Programming in C Lab":2,
+        "10. Life Skill": 2,
+    },
+    "Semester 3": last_4_sem["Semester 3"],
+    "Semester 4": last_4_sem["Semester 4"],
+    "Semester 5": last_4_sem["Semester 5"],
+    "Semester 6": last_4_sem["Semester 6"],
+}
+
 semesters_lateral = {
-    "Semester 3": {
-        "1. Digital Computer Principles": 4,
-        "2. Object Oriented Programming through C++": 3,
-        "3. Computer Architecture": 3,
-        "4. Database Management System": 3,
-        "5. Environmental Science & Disaster Management": 1.5,
-        "6. Digital Computer Principles Lab":1.5,
-        "7. Object Oriented Programming Lab":1.5,
-        "8. Database Management System Lab":2.5,
-    },
-    "Semester 4": {
-        "1. Data Communication": 4,
-        "2. Operating Systems": 3,
-        "3. Data Structures": 4,
-        "4. Computer System Hardware": 0,
-        "5. System Administration Lab": 1.5,
-        "6. Data Structures Lab":0,
-        "7. Computer System Hardware Lab":1.5,
-        "8. Application Development using Java":0,
-    },
-    "Semester 5": {
-        "1. Project Management & Software Engineering": 0,
-        "2. Web Programming": 4,
-        "3. Microprocessor and Interfacing": 4,
-        "4. Information Security / Ethical Hacking / Cloud Computing": 4,
-        "5. Web Programming Lab": 1.5,
-        "6. Microprocessor Lab":1.5,
-        "7. Industrial Training/Industrial Visit/Collaborative work":1.5,
-        "8. Computer Network Engineering Lab":1,
-    },
-    "Semester 6": {
-        "1. Microcontrollers": 4,
-        "2. Computer Networks": 4,
-        "3. Smart Device Programming": 4,
-        "4. Mobile Communication / Network Infrastructure Mangagement / Software Testing": 0,
-        "5. Microcontroller Lab": 2.5,
-        "6. Smart Device Programming Lab": 1.5,
-        "7. Project & Seminar":1.5,
-    },
+    "Semester 3": last_4_sem["Semester 3"],
+    "Semester 4": last_4_sem["Semester 4"],
+    "Semester 5": last_4_sem["Semester 5"],
+    "Semester 6": last_4_sem["Semester 6"],
 }
 
 # Get the student category from the user
