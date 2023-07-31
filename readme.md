@@ -76,8 +76,10 @@ You can access the hosted CGPA Calculator Application at the following link: [cg
 ## Screenshots
 
 CGPA Calculator for Revision 2021 Regular intake <br>
-<img src="https://i.pinimg.com/564x/fb/34/bd/fb34bd7a37419152eb539dfc9f0173de.jpg" alt="Logo" width="280" height="160"><br>
+<a href="https://pin.it/52vVT5R">
+<img src="https://i.pinimg.com/564x/fb/34/bd/fb34bd7a37419152eb539dfc9f0173de.jpg" alt="Logo" width="280" height="160"></a><br>
 CGPA Calculator for Revision 2021 Lateral Entry <br>
+<a href="https://pin.it/52vVT5R">
 <img src="https://i.pinimg.com/564x/d0/ae/95/d0ae956777467d4fa244b73a5363efd8.jpg" alt="Logo" width="280" height="160">
 </a>
 
@@ -87,6 +89,6 @@ Contributions to the project are welcome. If you find any bugs or have suggestio
 
 ## Contact
 
-For any inquiries or support, you can reach out to [vishnusureshperumbavoor@gmail.com](vishnusureshperumbavoor@gmail.com).
+For any inquiries or support, you can reach out to [Vishnu Suresh Perumbavoor](https://vishnusureshperumbavoor.github.io/V-S-P/).
 
 Enjoy using the CGPA Calculator Application! Happy calculating!
