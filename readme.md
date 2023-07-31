@@ -90,5 +90,11 @@ Contributions to the project are welcome. If you find any bugs or have suggestio
 ## Contact
 
 For any inquiries or support, you can reach out to [Vishnu Suresh Perumbavoor](https://vishnusureshperumbavoor.github.io/V-S-P/).
+[![GMail][gmail-shield]][gmail-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+[![github][github-shield]][github-url]
+[![Twitter][twitter-shield]][twitter-url]
+[![Linktree][linktree-shield]][linktree-url]
+[![Instagram][instagram-shield]][instagram-url]
 
 Enjoy using the CGPA Calculator Application! Happy calculating!
