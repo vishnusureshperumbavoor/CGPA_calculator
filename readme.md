@@ -22,7 +22,7 @@
 
 ## Introduction
 
-This CGPA Calculator Application is a user-friendly tool designed to help students calculate their Cumulative Grade Point Average (CGPA). With an intuitive interface, this application allows users to input their course grades and credits, and then instantly computes their CGPA based on the provided data.
+This CGPA Calculator Application is a user-friendly tool designed to help students calculate their Cumulative Grade Point Average (CGPA). With an intuitive interface, this application allows users to input their course grades, and then instantly computes their CGPA based on the provided data.
 
 ## Prerequisites
 Before using the CGPA Calculator Application, make sure you have the following installed on your system:
@@ -75,9 +75,9 @@ You can access the hosted CGPA Calculator Application at the following link: [cg
 
 ## Screenshots
 
-CGPA Calculator for Revision 2021 Regular intake
-<img src="https://i.pinimg.com/564x/fb/34/bd/fb34bd7a37419152eb539dfc9f0173de.jpg" alt="Logo" width="280" height="160">
-CGPA Calculator for Revision 2021 Lateral Entry
+CGPA Calculator for Revision 2021 Regular intake <br>
+<img src="https://i.pinimg.com/564x/fb/34/bd/fb34bd7a37419152eb539dfc9f0173de.jpg" alt="Logo" width="280" height="160"><br>
+CGPA Calculator for Revision 2021 Lateral Entry <br>
 <img src="https://i.pinimg.com/564x/d0/ae/95/d0ae956777467d4fa244b73a5363efd8.jpg" alt="Logo" width="280" height="160">
 </a>
 
