@@ -76,7 +76,7 @@ You can access the hosted CGPA Calculator Application at the following link: [cg
 ## Screenshots
 
 CGPA Calculator for Revision 2021 Regular intake <br>
-<a href="https://pin.it/52vVT5R">
+<a href="https://pin.it/3v0oVQn">
 <img src="https://i.pinimg.com/564x/fb/34/bd/fb34bd7a37419152eb539dfc9f0173de.jpg" alt="Logo" width="280" height="160"></a><br>
 CGPA Calculator for Revision 2021 Lateral Entry <br>
 <a href="https://pin.it/52vVT5R">
