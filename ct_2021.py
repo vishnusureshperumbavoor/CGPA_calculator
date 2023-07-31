@@ -1,5 +1,10 @@
 import streamlit as st
 
+st.set_page_config(
+    page_title="CGPA Calculator",
+    page_icon="🎓"
+)
+
 # Set the title of the app
 st.title("CT Revision 2021")
 
