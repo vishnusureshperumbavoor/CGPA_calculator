@@ -89,7 +89,7 @@ Contributions to the project are welcome. If you find any bugs or have suggestio
 
 ## Contact
 
-For any inquiries or support, you can reach out to [vishnusureshperumbavoor.com](https://vishnusureshperumbavoor.github.io/V-S-P/).
+For any inquiries or support, you can reach out to [vishnusureshperumbavoor.com](https://vishnusureshperumbavoor.github.io/V-S-P/). <br>
 [![LinkedIn][linkedin-shield]][linkedin-url]
 [![github][github-shield]][github-url]
 [![Twitter][twitter-shield]][twitter-url]
