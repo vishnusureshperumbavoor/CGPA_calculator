@@ -116,7 +116,7 @@ def get_credit_points(grade):
 
 
 for semester, subjects in semesters.items():
-    st.subheader(semester)
+    st.header(semester)
     semester_grades = []
     for i, subject_data in enumerate(subjects.items(), start=1):
         subject, credit_hours = subject_data[0], subject_data[1]
@@ -129,11 +129,11 @@ for semester, subjects in semesters.items():
 
     with col2:
         semester_cgpa_button_key = f"semester_cgpa_button_{semester}"
-        semester_cgpa_button = st.button("SGPA", key=semester_cgpa_button_key)
+        semester_cgpa_button = st.button("Calculate SGPA", key=semester_cgpa_button_key)
 
     with col1:
         cumulative_cgpa_button_key = f"cumulative_cgpa_button_{semester}"
-        cumulative_cgpa_button = st.button("CGPA", key=cumulative_cgpa_button_key)
+        cumulative_cgpa_button = st.button("Calculate CGPA", key=cumulative_cgpa_button_key)
 
     if semester_cgpa_button:
         semester_credit_points = 0
@@ -144,7 +144,7 @@ for semester, subjects in semesters.items():
             semester_credit_points += get_credit_points(grade) * credit_hours
 
         semester_cgpa = semester_credit_points / semester_credits
-        st.write(f"{semester} CGPA: {semester_cgpa:.2f}")
+        st.subheader(f"{semester} SGPA: {semester_cgpa:.2f}")
 
     if cumulative_cgpa_button:
         cumulative_credit_points = 0
@@ -160,7 +160,7 @@ for semester, subjects in semesters.items():
                     cumulative_credit_points += get_credit_points(grade) * credit_hours
 
         cumulative_cgpa = cumulative_credit_points / cumulative_credits
-        st.write(f"CGPA till {selected_semester}: {cumulative_cgpa:.2f}")
+        st.subheader(f"CGPA till {selected_semester}: {cumulative_cgpa:.2f}")
 
 
 
