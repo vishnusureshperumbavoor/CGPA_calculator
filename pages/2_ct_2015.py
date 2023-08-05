@@ -7,66 +7,66 @@ st.title("CT Revision 2015")
 
 last_4_sem = {
     "Semester 3": {
-        "1. Digital Computer Principles": 4,
-        "2. Object Oriented Programming through C++": 5,
-        "3. Computer Architecture": 4,
-        "4. Database Management System": 4,
-        "5. Environmental Science & Disaster Management": 3,
-        "6. Digital Computer Principles Lab":3,
-        "7. Object Oriented Programming Lab":3,
-        "8. Database Management System Lab":3,
+        "3139. DataBase Management System Lab":3,
+        "3138. Digital Computer Principles Lab":3,
+        "3137. Object Oriented Programming through C++ Lab":3,
+        "3134. Object Oriented Programming through C++": 5,
+        "3133. Digital Computer Principles": 4,
+        "3132. DataBase Management System": 4,
+        "3131. Computer Architecture": 4,
+        "3001. Environmental Science & Disaster Management": 3,
     },
     "Semester 4": {
-        "1. Data Communication": 4,
-        "2. Operating Systems": 4,
-        "3. Data Structures": 5,
-        "4. Computer System Hardware": 4,
-        "5. System Administration Lab": 3,
-        "6. Data Structures Lab":3,
-        "7. Computer System Hardware Lab":3,
-        "8. Application Development using Java":5,
+        "4139. System Administration Lab": 3,
+        "4138. Data Structures Lab":3,
+        "4137. Computer System Hardware Lab":3,
+        "4136. Application Development using Java":5,
+        "4134. Operating Systems": 4,
+        "4133. Data Structures": 5,
+        "4132. Data Communication": 4,
+        "4131. Computer System Hardware": 4,
     },
     "Semester 5": {
-        "1. Project Management & Software Engineering": 4,
-        "2. Web Programming": 4,
-        "3. Microprocessor and Interfacing": 4,
-        "4. Information Security / Ethical Hacking / Cloud Computing": 4,
-        "5. Web Programming Lab":4,
-        "6. Microprocessor Lab":4,
-        "7. Industrial Training/Industrial Visit/Collaborative work":2,
-        "8. Computer Network Engineering Lab":3,
+        "5139. Web Programming Lab":4,
+        "5138. Microprocessor Lab":4,
+        "5137. Computer Network Engineering Lab":3,
+        "5134. Cloud Computing": 4,
+        "5133. Web Programming": 4,
+        "5132. Project Management and Software Engineering": 4,
+        "5131. Microprocessor and Interfacing": 4,
+        "5009. Industrial Training/Industrial Visit/Collaborative work":2,
     },
     "Semester 6": {
-        "1. Microcontrollers": 5,
-        "2. Computer Networks": 4,
-        "3. Smart Device Programming": 4,
-        "4. Mobile Communication / Network Infrastructure Mangagement / Software Testing": 5,
-        "5. Microcontroller Lab": 3,
-        "6. Smart Device Programming Lab": 3,
-        "7. Project & Seminar":10,
+        "6139. Microcontroller Lab": 3,
+        "6138. Smart Device Programming Lab": 3,
+        "6136. Software Testing": 5,
+        "6133. Smart Device Programming": 4,
+        "6132. Microcontrollers": 5,
+        "6131. Computer Networks": 4,
+        "6009. Project & Seminar":10,
     },
 }
 
 semesters_regular = {
     "Semester 1": {
-        "1. English for Communication I": 3,
-        "2. Engineering Mathematics I": 6,
-        "3. Engineering Physics I": 3,
-        "4. Engineering Chemistry I": 3,
-        "5. Health & Physical Education": 2,
-        "6. Computing Fundamentals": 4,
+        "1009. Health & Physical Education": 2,
+        "1008. Computing Fundamentals": 4,
+        "1004. Chemistry I": 3,
+        "1003. Physics I": 3,
+        "1002. Mathematics I": 6,
+        "1001. English I": 3,
     },
     "Semester 2": {
-        "1. English for Communication II": 3,
-        "2. Engineering Mathematics II": 6,
-        "3. Engineering Physics II":3,
-        "4. Engineering Chemistry II": 3,
-        "5. Programming in C": 4,
-        "6. Engineering Graphics": 5,
-        "7. Workshop Practice": 3,
-        "8. Engineering Science Lab II":3,
-        "9. Programming in C Lab":2,
-        "10. Life Skill": 2,
+        "2139. Programming in C Lab":2,
+        "2131. Programming in C": 4,
+        "2009. Life Skill": 2,
+        "2008. Workshop Practice": 3,
+        "2007. Engineering Science Lab II":3,
+        "2005. Engineering Graphics": 5,
+        "2004. Chemistry II": 3,
+        "2003. Physics II":3,
+        "2002. Mathematics II": 6,
+        "2001. English II": 3,
     },
     "Semester 3": last_4_sem["Semester 3"],
     "Semester 4": last_4_sem["Semester 4"],
@@ -129,11 +129,11 @@ for semester, subjects in semesters.items():
 
     with col2:
         semester_cgpa_button_key = f"semester_cgpa_button_{semester}"
-        semester_cgpa_button = st.button("Calculate Semester CGPA", key=semester_cgpa_button_key)
+        semester_cgpa_button = st.button("SGPA", key=semester_cgpa_button_key)
 
     with col1:
         cumulative_cgpa_button_key = f"cumulative_cgpa_button_{semester}"
-        cumulative_cgpa_button = st.button("Calculate CGPA till Semester", key=cumulative_cgpa_button_key)
+        cumulative_cgpa_button = st.button("CGPA", key=cumulative_cgpa_button_key)
 
     if semester_cgpa_button:
         semester_credit_points = 0
@@ -167,14 +167,14 @@ for semester, subjects in semesters.items():
 
 
 # Display the CGPAs to the user
-st.subheader("CGPA")
-if semester_cgpas:
-    st.write("Semester CGPAs:")
-    for semester, cgpa in zip(semesters.keys(), semester_cgpas):
-        st.write(f"{semester}: {cgpa}")
+# st.subheader("CGPA")
+# if semester_cgpas:
+#     st.write("Semester CGPAs:")
+#     for semester, cgpa in zip(semesters.keys(), semester_cgpas):
+#         st.write(f"{semester}: {cgpa}")
     
-    st.write("Cumulative CGPAs:")
-    for semester, cgpa in zip(semesters.keys(), cumulative_cgpas):
-        st.write(f"{semester}: {cgpa}")
-else:
-    st.write("No grades selected yet.")
+#     st.write("Cumulative CGPAs:")
+#     for semester, cgpa in zip(semesters.keys(), cumulative_cgpas):
+#         st.write(f"{semester}: {cgpa}")
+# else:
+#     st.write("No grades selected yet.")
