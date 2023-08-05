@@ -37,11 +37,11 @@ last_4_sem = {
     },
     "Semester 5": {
         "6009. Major Project":0,
-        "5139. Virtualisation Technology and cloud computing Lab / Ethical Hacking Lab / Fundamentals of Artificial Intelligence and Machine Learning Lab":1.5,
+        "5139. Ethical Hacking Lab":1.5,
         "5138. System Administration Lab":1.5,
         "5137. Embedded Systems and Real Time Operating System Lab": 1.5,
         "5133. Community Skills in Indian knowledge system": 4,
-        "5132. Virtualisation Technology and Cloud Computing / Ethical Hacking / Fundamentals of Artificial Intelligence and Machine Learning": 4,
+        "5132. Ethical Hacking": 4,
         "5131. Embedded System and Real time Operating System": 4,
         "5008. Seminar":1,
         "5002. Project Management and Software Engineering": 0,
