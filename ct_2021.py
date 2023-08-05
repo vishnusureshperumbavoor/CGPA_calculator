@@ -158,7 +158,7 @@ for semester, subjects in semesters.items():
             semester_credit_points += get_credit_points(grade) * credit_hours
 
         semester_cgpa = semester_credit_points / semester_credits
-        st.subheader(f"{semester} SGPA: {semester_cgpa:.2f}")
+        st.subheader(f"SGPA {semester}: {semester_cgpa:.2f}")
 
     if cumulative_cgpa_button:
         cumulative_credit_points = 0
