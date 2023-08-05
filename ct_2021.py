@@ -8,6 +8,7 @@ st.set_page_config(
 # Set the title of the app
 st.title("CT Revision 2021")
 
+
 # Define the subjects and their corresponding credit hours for each semester
 
 last_4_sem = {
@@ -138,42 +139,42 @@ for semester, subjects in semesters.items():
         grades.append(st.selectbox(f"{subject} (Credits: {credit_hours})", ("S", "A", "B", "C", "D", "E", "F"), key=key))
         semester_grades.append(grades[-1])
 
-    # col1, col2 = st.columns(2)
+    col1, col2 = st.columns(2)
 
-    # with col2:
-    #     semester_cgpa_button_key = f"semester_cgpa_button_{semester}"
-    #     semester_cgpa_button = st.button("Calculate Semester CGPA", key=semester_cgpa_button_key)
+    with col2:
+        semester_cgpa_button_key = f"semester_cgpa_button_{semester}"
+        semester_cgpa_button = st.button("Calculate SGPA", key=semester_cgpa_button_key)
 
-    # with col1:
-    # cumulative_cgpa_button_key = f"cumulative_cgpa_button_{semester}"
-    # cumulative_cgpa_button = st.button("Calculate CGPA till Semester", key=cumulative_cgpa_button_key)
+    with col1:
+        cumulative_cgpa_button_key = f"cumulative_cgpa_button_{semester}"
+        cumulative_cgpa_button = st.button("Calculate CGPA", key=cumulative_cgpa_button_key)
 
-    # if semester_cgpa_button:
-    #     semester_credit_points = 0
-    #     semester_credits = sum(subject_data[1] for subject_data in subjects.items())
+    if semester_cgpa_button:
+        semester_credit_points = 0
+        semester_credits = sum(subject_data[1] for subject_data in subjects.items())
 
-    #     for grade, subject_data in zip(semester_grades, subjects.items()):
-    #         credit_hours = subject_data[1]
-    #         semester_credit_points += get_credit_points(grade) * credit_hours
+        for grade, subject_data in zip(semester_grades, subjects.items()):
+            credit_hours = subject_data[1]
+            semester_credit_points += get_credit_points(grade) * credit_hours
 
-    #     semester_cgpa = semester_credit_points / semester_credits
-    #     st.write(f"{semester} CGPA: {semester_cgpa:.2f}")
+        semester_cgpa = semester_credit_points / semester_credits
+        st.subheader(f"{semester} SGPA: {semester_cgpa:.2f}")
 
-    # if cumulative_cgpa_button:
-    cumulative_credit_points = 0
-    cumulative_credits = 0
-    selected_semester = semester
+    if cumulative_cgpa_button:
+        cumulative_credit_points = 0
+        cumulative_credits = 0
+        selected_semester = semester
 
-    for sem, subjects in semesters.items():
-        for subject, credit_hours in subjects.items():
-            if sem <= selected_semester:
-                cumulative_credits += credit_hours
-                index = course_names.index(subject)
-                grade = grades[index]
-                cumulative_credit_points += get_credit_points(grade) * credit_hours
+        for sem, subjects in semesters.items():
+            for subject, credit_hours in subjects.items():
+                if sem <= selected_semester:
+                    cumulative_credits += credit_hours
+                    index = course_names.index(subject)
+                    grade = grades[index]
+                    cumulative_credit_points += get_credit_points(grade) * credit_hours
 
-    cumulative_cgpa = cumulative_credit_points / cumulative_credits
-    st.subheader(f"CGPA till {selected_semester}: {cumulative_cgpa:.2f}")
+        cumulative_cgpa = cumulative_credit_points / cumulative_credits
+        st.subheader(f"CGPA till {selected_semester}: {cumulative_cgpa:.2f}")
 
 # Display the CGPAs to the user
 # st.subheader("CGPA")

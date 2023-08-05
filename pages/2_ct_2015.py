@@ -162,7 +162,6 @@ for semester, subjects in semesters.items():
         cumulative_cgpa = cumulative_credit_points / cumulative_credits
         st.subheader(f"CGPA till {selected_semester}: {cumulative_cgpa:.2f}")
 
-
 # Display the CGPAs to the user
 # st.subheader("CGPA")
 # if semester_cgpas:
