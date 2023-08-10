@@ -21,57 +21,47 @@
 # CGPA Calculator Application using Streamlit
 
 ## Introduction
+This this a CGPA calculator created by a student from computer department of Government Polytechnic College Perumbavoor <br>
+This application can be used to calculate the CGPA and SGPA of the computer department (Revision 2021 & 2015) of the college <br>
 
-This CGPA Calculator Application is a user-friendly tool designed to help students calculate their Cumulative Grade Point Average (CGPA). With an intuitive interface, this application allows users to input their course grades, and then instantly computes their CGPA based on the provided data.
+## Website
+
+Access at [cgpacalculator.streamlit.app](https://cgpacalculator.streamlit.app/)
+
+## Department support
+Computer (Revision 2021 & 2015) <br>
+Mechanical (soon) <br>
+Electronics (soon) <br>
+
+## Future updates
+Gmail based data saving <br>
+Adding electronics and mechanical department
 
 ## Prerequisites
-Before using the CGPA Calculator Application, make sure you have the following installed on your system:
-
-1. **Python**: The application is developed using Python programming language. You can download Python from the official website: [https://www.python.org/downloads/](https://www.python.org/downloads/)
-
-## Features
-
-- Simple and Intuitive User Interface: The application offers an easy-to-use interface, making it accessible to all users, including students from different educational backgrounds.
-
-- Real-time CGPA Calculation: Once the user enters the course grades, the application instantly calculates the CGPA and displays the result.
-
-## Department Support
-
-- Computer Engineering: The current version of the CGPA calculator supports the Computer Engineering department of Revision 2021 & 2015.
-
-- Mechanical Engineering: **(Note: Currently not supported)** The CGPA calculator does not include the functionality for calculating CGPA for Mechanical Engineering students.
-
-- Electrical Engineering: **(Note: Currently not supported)** The CGPA calculator does not include the functionality for calculating CGPA for Electrical Engineering students.
+Python
 
 ## How to Use
 
 1. Clone the repository to your local machine.
+```
+https://github.com/vishnusureshperumbavoor/CGPA_calculator.git
+```
+2. Open in VSCode
+```
+code CGPA_calculator
+```
 
-2. Install the required dependencies by running:
+3. Install required dependencies
 
 ```sh
 pip install -r requirements.txt
 ```
 
-3. Run the Streamlit application:
+4. Run the Streamlit application
 
 ```sh
 streamlit run ct_2021.py
 ```
-
-4. Access the application in your web browser via the provided local URL.
-
-5. Enter the grades for each course taken, and the CGPA will be calculated and displayed in real-time.
-
-## Website
-
-You can access the hosted CGPA Calculator Application at the following link: [cgpacalculator.streamlit.app](https://cgpacalculator.streamlit.app/).
-
-## Technologies Used
-
-- Python: The application is developed using Python programming language.
-
-- Streamlit: The user interface is built using Streamlit, a Python library for creating web applications with minimal effort.
 
 ## Screenshots
 
@@ -89,12 +79,10 @@ Contributions to the project are welcome. If you find any bugs or have suggestio
 
 ## Contact
 
-For any inquiries or support, you can reach out to [vishnusureshperumbavoor.com](https://vishnusureshperumbavoor.github.io/V-S-P/). <br>
+For any inquiries or support, you can reach out to [vishnusureshperumbavoor.com](https://vishnusureshperumbavoor.github.io/V-S-P/). <br> <br>
 [![LinkedIn][linkedin-shield]][linkedin-url]
 [![github][github-shield]][github-url]
 [![Twitter][twitter-shield]][twitter-url]
 [![Linktree][linktree-shield]][linktree-url]
 [![Instagram][instagram-shield]][instagram-url]
 [![GMail][gmail-shield]][gmail-url]
-
-Enjoy using the CGPA Calculator Application! Happy calculating!
