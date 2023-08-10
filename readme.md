@@ -21,8 +21,7 @@
 # CGPA Calculator Application using Streamlit
 
 ## Introduction
-This this a CGPA calculator created by a student from computer department of Government Polytechnic College Perumbavoor <br>
-This application can be used to calculate the CGPA and SGPA of the computer department (Revision 2021 & 2015) of the college <br>
+This this a CGPA calculator created by a student from computer department of Government Polytechnic College Perumbavoor
 
 ## Website
 
@@ -30,12 +29,12 @@ Access at [cgpacalculator.streamlit.app](https://cgpacalculator.streamlit.app/)
 
 ## Department support
 Computer (Revision 2021 & 2015) <br>
+Electronics (Revision 2021) <br>
 Mechanical (soon) <br>
-Electronics (soon) <br>
 
 ## Future updates
 Gmail based data saving <br>
-Adding electronics and mechanical department
+Adding mechanical department
 
 ## Prerequisites
 Python
