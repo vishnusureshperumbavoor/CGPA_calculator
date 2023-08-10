@@ -170,22 +170,9 @@ for semester, subjects in semesters.items():
         cumulative_cgpa = cumulative_credit_points / cumulative_credits
         st.subheader(f"CGPA till {selected_semester}: {cumulative_cgpa:.2f}")
 
-# Display the CGPAs to the user
-# st.subheader("CGPA")
-# if semester_cgpas:
-#     st.write("Semester CGPAs:")
-#     for semester, cgpa in zip(semesters.keys(), semester_cgpas):
-#         st.write(f"{semester}: {cgpa}")
-    
-#     st.write("Cumulative CGPAs:")
-#     for semester, cgpa in zip(semesters.keys(), cumulative_cgpas):
-#         st.write(f"{semester}: {cgpa}")
-# else:
-#     st.write("No grades selected yet.")
-
 st.markdown("---")
+st.write("Developed by: VSP")
 st.write("GitHub Repository: https://github.com/vishnusureshperumbavoor/CGPA_calculator")
-st.write("Developed by: VSP (Vishnu Suresh Perumbavoor)")
 st.write("GMail: vishnusureshperumbavoor@gmail.com")
 st.write("GitHub: [vishnusureshperumbavoor](https://github.com/vishnusureshperumbavoor)")
 st.write("Twitter: [vspeeeeee](http://www.twitter.com/vspeeeeee)")
